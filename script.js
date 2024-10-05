@@ -35,27 +35,3 @@ function sendEmail() {
   // Open the mailto link in a new window to trigger the default mail client
   window.location.href = mailtoLink;
 }
-
-// Show the button when scrolling down 100px
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  const backToTopButton = document.getElementById("backToTop");
-
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-  ) {
-    backToTopButton.style.display = "block";
-  } else {
-    backToTopButton.style.display = "none";
-  }
-}
-
-// Scroll smoothly to the top when clicking the button
-document.getElementById("backToTop").addEventListener("click", function (e) {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});

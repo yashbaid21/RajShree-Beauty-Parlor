@@ -95,7 +95,7 @@ section {
 
 /* Zoom-Out Effect on Hover */
 .header .logo:hover {
-  transform: scale(1.5); /* Zooms out to 90% of original size */
+  transform: scale(1.2); /* Zooms out to 90% of original size */
   color: var(--primary-color); /* Changes the color on hover */
 }
 
@@ -104,7 +104,7 @@ section {
 }
 
 .image:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .header .navbar #close-navbar {
   position: absolute;
@@ -143,7 +143,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(banner.png) no-repeat;
+  background-color: #d7c7ae;
   background-size: cover;
   background-position: center;
 }
